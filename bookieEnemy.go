@@ -1,9 +1,7 @@
 package main
 
 import (
-  "fmt"
-
-  "github.com/ngalantowicz/bookieEnemy/sportsData"
+  "bookieEnemy/sportsData"
 )
 
 func main(){
