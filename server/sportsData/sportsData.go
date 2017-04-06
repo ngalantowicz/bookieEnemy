@@ -8,12 +8,11 @@ import (
 )
 
 func GetTeamData() {
-    var uri = "https://api.github.com/user"
+    var uri = "https://api.sportradar.us/nfl-ot1/games/2016/reg/schedule.json?api_key=j6hpwhu26eqnczatrr2vers9"
     client := &http.Client{}
 
     request, err := http.NewRequest("GET", uri, nil)
     request.Header.Set("Content-Type", "application/json")
-    request.Header.Set("Authorization", "token e06c38d27add44d4da0d6c314429c584b9ebe401")
     request.Header.Set("Accept", "application/json")
     resp, err := client.Do(request)
 
