@@ -6,8 +6,8 @@ class Search extends React.Component {
   }
 
   render() {
-    return(
-      <form action="/" method="POST">
+    return (
+      <form action="/results" method="POST">
         <input type="submit" value="search" />
       </form>
     );
