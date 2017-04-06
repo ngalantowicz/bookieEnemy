@@ -7,11 +7,11 @@ module.exports = {
 
   entry: './client/src/index.jsx',
   output: {
-    path: path.resolve(__dirname, 'client/src'),
+    path: path.resolve(__dirname, 'dist/js'),
     filename: 'app.min.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'client/src'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     stats: 'errors-only',
     open: true,
@@ -36,7 +36,7 @@ module.exports = {
       title: 'Bookie Enemy',
       hash: true,
       template: './client/src/index.html'
-    }),
-    new ExtractTextPlugin({filename: 'style.css', disable: false, allChunks: true})
+    })
+    // new ExtractTextPlugin({filename: 'style.css', disable: false, allChunks: true})
   ]
 };
